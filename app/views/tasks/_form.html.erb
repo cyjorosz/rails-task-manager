@@ -1,0 +1,9 @@
+<%= form_for @task do |form|%>
+  <%= form.label :description, "Enter a task" %>
+  <%= form.text_field :description %>
+  <%= form.label :done, "To do", value: false %>
+  <%= form.radio_button :done, false, :value =>false %>
+  <%= form.label :done, "Done", value: true %>
+  <%= form.radio_button :done, true, :value =>true %>
+  <%= form.submit %>
+<% end %>
